@@ -31,15 +31,18 @@ The Zen of Python is available in Python via
 import this
 ```
 
-#### 1. Beautiful is better than ugly
+#### Guideline 1
+```bash
+1. Beautiful is better than ugly
+2. Explicit is better than implicit
+3. Simple is better than complex
+4. Complex is better than complicated
+```
 
-#### 2. Explicit is better than implicit
-
-#### 3. Simple is better than complex
-
-#### 4. Complex is better than complicated
-
-#### 5. Flat is better than nested
+#### Guideline 2
+```bash
+5. Flat is better than nested
+```
 
 Bad
 ```python
@@ -61,7 +64,10 @@ if not condition_2:
 # Do something
 ```
 
-#### 6. Sparse is better than dense
+#### Guideline 3
+```bash
+6. Sparse is better than dense
+```
 
 Bad
 ```python
@@ -95,13 +101,18 @@ if condition_1 and condition_2 and condition_3:
 
 ```
 
-#### 7. Readability counts.
+#### Guideline 4
+```bash
+7. Readability counts.
+8. Special cases aren't special enough to break the rules.
+9. Although practicality beats purity.
+```
 
-#### 8. Special cases aren't special enough to break the rules.
-
-#### 9. Although practicality beats purity.
-
-#### 10. Errors should never pass silently. Unless explicitly silenced.
+#### Guideline 5
+```bash
+10. Errors should never pass silently. 
+11. Unless explicitly silenced.
+```
 
 Bad
 ```python
@@ -124,16 +135,22 @@ except:
 - Always explicitly identify the exceptions you will catch by name and handle only those exceptions
 - You can simply log the exceptions or otherwise acknowledge the exception and re-raise it
 
-#### 11. In the face of ambiguity, refuse the temptation to guess.
+#### Guideline 6
+```bash
+11. In the face of ambiguity, refuse the temptation to guess.
+12. In the face of ambiguity, refuse the temptation to guess.
+```
 
-#### 12. In the face of ambiguity, refuse the temptation to guess.
-
-#### 13. There should be one-- and preferably only one --obvious way to do it.
-
-#### 14. Although that way may not be obvious at first unless you're Dutch.
+#### Guideline 7
+```bash
+13. There should be one-- and preferably only one --obvious way to do it.
+14. Although that way may not be obvious at first unless you're Dutch.
+```
 
 Example 1
+
 ```python
+# There are 3 ways to do string formatting, but follow one style in your codebase is recommended
 programming_language = 'Python'
 
 # Method 1
@@ -147,22 +164,23 @@ print(f'The Zen of {programming_lanaguage}')
 ```
 
 Example 2
+
 ```python
+# There are 2 conventions for string types, either single/double quotation marks, but you should pick one throught the code base
 programming_language_1 = 'Python'
 programming_language_2 = "Python"
 ```
 
 In case there are multiple ways to solve a problem in Python, then developer needs to be familiar with all of the different methods. However, developers should follow the same choice throught the code base for better readibility
 
-#### 15. Now is better than never.
-
-#### 16. Although never is often better than *right* now.
-
-#### 17. If the implementation is hard to explain, it's a bad idea.
-
-#### 18. If the implementation is easy to explain, it may be a good idea.
-
-#### 19. Namespaces are one honking great idea -- let's do more of those!
+#### Guideline 8
+```bash
+15. Now is better than never.
+16. Although never is often better than *right* now.
+17. If the implementation is hard to explain, it's a bad idea.
+18. If the implementation is easy to explain, it may be a good idea.
+19. Namespaces are one honking great idea -- let's do more of those!
+```
 
 ## References
 1. https://peps.python.org/pep-0020/
