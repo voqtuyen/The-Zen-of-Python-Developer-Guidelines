@@ -1,4 +1,4 @@
-# The Zen of Python - Developer Guides
+# The Zen of Python - Developer Guidelines
 
 PEP 20 (a.k.a. The Zen of Python)
 
