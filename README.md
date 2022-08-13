@@ -36,6 +36,25 @@ import this
 1. Beautiful is better than ugly
 ```
 
+Bad
+```python
+from first_module.second_module.third_module import \
+    long_name_function_1, \
+    long_name_function_2, \
+    long_name_function_3
+```
+
+Good
+```python
+from first_module.second_module.third_module import
+(
+    long_name_function_1,
+    long_name_function_2,
+    long_name_function_3
+)
+```
+
+
 ### Guideline 2
 ```bash
 2. Explicit is better than implicit
