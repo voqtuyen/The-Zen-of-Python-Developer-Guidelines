@@ -132,6 +132,28 @@ except:
 
 #### 14. Although that way may not be obvious at first unless you're Dutch.
 
+Example 1
+```python
+programming_language = 'Python'
+
+# Method 1
+print('The Zen of %s' % programming_language)
+
+# Method 2
+print('The Zen of {}'.format(programming_language))
+
+# Method 3
+print(f'The Zen of {programming_lanaguage}')
+```
+
+Example 2
+```python
+programming_language_1 = 'Python'
+programming_language_2 = "Python"
+```
+
+In case there are multiple ways to solve a problem in Python, then developer needs to be familiar with all of the different methods. However, developers should follow the same choice throught the code base for better readibility
+
 #### 15. Now is better than never.
 
 #### 16. Although never is often better than *right* now.
