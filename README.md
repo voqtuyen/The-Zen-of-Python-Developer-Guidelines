@@ -34,12 +34,32 @@ import this
 ### Guideline 1
 ```bash
 1. Beautiful is better than ugly
+```
+Bad
+```python
+def make_dict(*args):
+    x, y = args
+    return dict(**locals())
+```
+
+Good
+```python
+def make_dict(x, y):
+   return {'x': x, 'y': y}
+```
+
+### Guideline 2
+```bash
 2. Explicit is better than implicit
+```
+
+### Guideline 3
+```bash
 3. Simple is better than complex
 4. Complex is better than complicated
 ```
 
-### Guideline 2
+### Guideline 4
 ```bash
 5. Flat is better than nested
 ```
@@ -64,7 +84,7 @@ if not condition_2:
 # Do something
 ```
 
-### Guideline 3
+### Guideline 5
 ```bash
 6. Sparse is better than dense
 ```
@@ -101,14 +121,14 @@ if condition_1 and condition_2 and condition_3:
 
 ```
 
-### Guideline 4
+### Guideline 6
 ```bash
 7. Readability counts.
 8. Special cases aren't special enough to break the rules.
 9. Although practicality beats purity.
 ```
 
-### Guideline 5
+### Guideline 7
 ```bash
 10. Errors should never pass silently. 
 11. Unless explicitly silenced.
@@ -135,13 +155,13 @@ except:
 - Always explicitly identify the exceptions you will catch by name and handle only those exceptions
 - You can simply log the exceptions or otherwise acknowledge the exception and re-raise it
 
-### Guideline 6
+### Guideline 8
 ```bash
 11. In the face of ambiguity, refuse the temptation to guess.
 12. In the face of ambiguity, refuse the temptation to guess.
 ```
 
-### Guideline 7
+### Guideline 9
 ```bash
 13. There should be one-- and preferably only one --obvious way to do it.
 14. Although that way may not be obvious at first unless you're Dutch.
@@ -173,7 +193,7 @@ programming_language_2 = "Python"
 
 In case there are multiple ways to solve a problem in Python, then developer needs to be familiar with all of the different methods. However, developers should follow the same choice throught the code base for better readibility
 
-### Guideline 8
+### Guideline 10
 ```bash
 15. Now is better than never.
 16. Although never is often better than *right* now.
