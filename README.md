@@ -35,6 +35,12 @@ import this
 ```bash
 1. Beautiful is better than ugly
 ```
+
+### Guideline 2
+```bash
+2. Explicit is better than implicit
+```
+
 Bad
 ```python
 def make_dict(*args):
@@ -46,11 +52,6 @@ Good
 ```python
 def make_dict(x, y):
    return {'x': x, 'y': y}
-```
-
-### Guideline 2
-```bash
-2. Explicit is better than implicit
 ```
 
 ### Guideline 3
