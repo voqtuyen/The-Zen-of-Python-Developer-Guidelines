@@ -41,6 +41,26 @@ import this
 
 #### 5. Flat is better than nested
 
+Bad
+```python
+if condition_1:
+    if condition_2:
+        # Do something
+    else:
+        return
+else:
+    return
+```
+
+Good
+```python
+if not condition_1:
+    return
+if not condition_2:
+    return
+# Do something
+```
+
 #### 6. Sparse is better than dense
 
 Bad
