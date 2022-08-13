@@ -40,8 +40,8 @@ import this
 ```bash
 2. Explicit is better than implicit
 ```
-
 Example 1
+
 Bad
 ```python
 def make_dict(*args):
@@ -56,6 +56,7 @@ def make_dict(x, y):
 ```
 
 Example 2
+
 Bad
 ```python
 from math import sin
