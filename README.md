@@ -214,7 +214,6 @@ except:
 
 ### Guideline 8
 ```bash
-11. In the face of ambiguity, refuse the temptation to guess.
 12. In the face of ambiguity, refuse the temptation to guess.
 ```
 
