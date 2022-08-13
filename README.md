@@ -64,7 +64,7 @@ if not condition_2:
 # Do something
 ```
 
-#### Guideline 3
+### Guideline 3
 ```bash
 6. Sparse is better than dense
 ```
