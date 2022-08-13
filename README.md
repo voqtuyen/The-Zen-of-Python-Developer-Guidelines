@@ -41,6 +41,7 @@ import this
 2. Explicit is better than implicit
 ```
 
+Example 1
 Bad
 ```python
 def make_dict(*args):
@@ -52,6 +53,28 @@ Good
 ```python
 def make_dict(x, y):
    return {'x': x, 'y': y}
+```
+
+Example 2
+Bad
+```python
+from math import sin
+
+def sin(x):
+   return 'It's a sin'
+   
+print(sin(180))
+```
+
+Good
+```python
+import math
+
+def sin(x):
+    return 'It's a sin'
+    
+print(sin(180))
+print(math.sin(180))
 ```
 
 ### Guideline 3
@@ -207,3 +230,4 @@ In case there are multiple ways to solve a problem in Python, then developer nee
 1. https://peps.python.org/pep-0020/
 2. The Hitchhiker's Guide to Python, Kenneth Reitz & Tanya Schlusser
 3. https://initialcommit.com/blog/zen-of-python
+4. https://betterprogramming.pub/contemplating-the-zen-of-python-186722b833e5
