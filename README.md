@@ -103,6 +103,7 @@ if condition_1 and condition_2 and condition_3:
 
 #### 10. Errors should never pass silently. Unless explicitly silenced.
 
+
 #### 11. In the face of ambiguity, refuse the temptation to guess.
 
 #### 12.
@@ -122,4 +123,5 @@ if condition_1 and condition_2 and condition_3:
 #### 19. Namespaces are one honking great idea -- let's do more of those!
 
 ## References
-1. The Hitchhiker's Guide to Python, Kenneth Reitz & Tanya Schlusser
+1. https://peps.python.org/pep-0020/
+2. The Hitchhiker's Guide to Python, Kenneth Reitz & Tanya Schlusser
