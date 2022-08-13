@@ -36,6 +36,7 @@ import this
 1. Beautiful is better than ugly
 ```
 
+#### Example 1
 Bad
 ```python
 from first_module.second_module.third_module import \
@@ -54,13 +55,26 @@ from first_module.second_module.third_module import
 )
 ```
 
+#### Example 2
+Bad
+```python
+message = "This is very very very long message, you should think about splitting " \
+          "this message into multiple lines of code for better readability"
+```
+
+Good
+```python
+message = (
+    "This is very very very long message, you should think about splitting"
+    " this message into multiple lines of code for better readability"
+)
+```
 
 ### Guideline 2
 ```bash
 2. Explicit is better than implicit
 ```
-Example 1
-
+#### Example 1
 Bad
 ```python
 def make_dict(*args):
@@ -74,8 +88,7 @@ def make_dict(x, y):
    return {'x': x, 'y': y}
 ```
 
-Example 2
-
+#### Example 2
 Bad
 ```python
 from math import sin
