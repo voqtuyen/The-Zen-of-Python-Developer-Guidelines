@@ -103,6 +103,26 @@ if condition_1 and condition_2 and condition_3:
 
 #### 10. Errors should never pass silently. Unless explicitly silenced.
 
+Bad
+```python
+try:
+    # Do something with possible exceptions
+except:
+    pass
+```
+- The except clause without any specified exception will catch everything and ignore it.
+- A broad except clause can hide bugs and leave them to cause some problem later on
+
+Good
+```python
+try:
+    # Do something with possible exceptions
+except:
+    print('An exception happend')
+    raise
+```
+- Always explicitly identify the exceptions you will catch by name and handle only those exceptions
+- You can simply log the exceptions or otherwise acknowledge the exception and re-raise it
 
 #### 11. In the face of ambiguity, refuse the temptation to guess.
 
